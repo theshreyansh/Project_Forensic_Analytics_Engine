@@ -1,0 +1,351 @@
+vendor_id,vendor_name,bank_account,country,vendor_type
+V00001,Greene-Garcia,1000333752,India,IT
+V00002,Gonzalez-Mann,1000517821,Germany,Industrial
+V00003,Cole-Johnson,1000172792,Germany,Industrial
+V00004,Davis and Sons,1000772642,UK,Services
+V00005,Pope-Klein,1000812526,UK,Industrial
+V00006,Silva PLC,1000128941,India,Industrial
+V00007,"Hicks, Sloan and Ramirez",1000287241,UK,Industrial
+V00008,"Parker, Burns and Higgins",1000140115,India,Services
+V00009,Pearson-Smith,1000462479,Germany,Services
+V00010,Kirby-Dillon,1000735656,UK,Consulting
+V00011,Morgan Inc,1000503906,UK,IT
+V00012,Combs-Faulkner,1000367095,India,Services
+V00013,Foster-Bell,1000101773,UK,IT
+V00014,"Pena, Lawson and Adams",1000481913,USA,Consulting
+V00015,Clarke-Mcpherson,1000796503,Germany,Industrial
+V00016,Gilmore-Johnson,1000795612,India,Industrial
+V00017,Gardner-Lopez,1000631756,Germany,Services
+V00018,Carrillo PLC,1000442027,USA,Industrial
+V00019,Jefferson-Ford,1000681343,Singapore,IT
+V00020,"Ellison, Schneider and Gomez",1000540869,USA,IT
+V00021,"Mann, Reed and Green",1000745414,UK,Industrial
+V00022,Gibbs-Davis,1000525800,UK,Consulting
+V00023,Thompson PLC,1000418635,Germany,IT
+V00024,Cortez-Rogers,1000550770,UK,Industrial
+V00025,Caldwell-Wu,1000587575,USA,Services
+V00026,"Orr, Phillips and Kim",1000808446,Singapore,Services
+V00027,Wells-Salazar,1000932291,Singapore,Consulting
+V00028,Peters-Lutz,1000397571,UK,Industrial
+V00029,"Nguyen, Gray and Walsh",1000197923,Singapore,Industrial
+V00030,Weaver and Sons,1000335552,Singapore,IT
+V00031,"Ramos, Pham and Landry",1000125611,India,IT
+V00032,Rivera Inc,1000598216,UK,Consulting
+V00033,Mendoza-Ellis,1000577538,USA,IT
+V00034,Powell and Sons,1000853240,USA,Services
+V00035,Klein Ltd,1000519066,Singapore,IT
+V00036,Mcgrath-Wood,1000787926,India,Consulting
+V00037,"Watson, Kennedy and Richardson",1000916232,USA,IT
+V00038,Campbell-Wolf,1000284430,UK,Services
+V00039,Mayer LLC,1000152657,UK,IT
+V00040,Clark Group,1000989545,India,Services
+V00041,Ramirez-Holt,1000239816,USA,Industrial
+V00042,Ingram LLC,1000891937,USA,Services
+V00043,Thompson Inc,1000970914,UK,Services
+V00044,"Mccann, Duarte and Jones",1000266889,USA,Services
+V00045,"Gonzalez, Clarke and Kelley",1000371782,Singapore,Industrial
+V00046,Nixon PLC,1000903013,UK,Services
+V00047,Martin-Ramos,1000757193,Singapore,Industrial
+V00048,Bishop Group,1000561239,India,Industrial
+V00049,"Moore, Johnston and Calderon",1000345884,Germany,Industrial
+V00050,Randall-Snyder,1000435239,UK,Consulting
+V00051,"Griffin, Harris and Calderon",1000245095,Singapore,IT
+V00052,White-Schmidt,1000501641,Singapore,IT
+V00053,Wood-Lee,1000167348,USA,Services
+V00054,Cabrera-James,1000446954,UK,Services
+V00055,Blackburn Inc,1000535970,India,IT
+V00056,Stone Inc,1000973349,USA,Services
+V00057,"Kidd, Burns and Bradley",1000907189,UK,Consulting
+V00058,Mitchell Inc,1000998348,UK,Services
+V00059,"Pena, Ford and Mcdonald",1000600149,India,Industrial
+V00060,Estrada Ltd,1000413118,USA,Services
+V00061,Dunlap Group,1000664365,UK,IT
+V00062,"Foster, Hall and Holt",1000611945,Singapore,Industrial
+V00063,Fisher Group,1000557007,USA,Consulting
+V00064,"Davis, Richardson and Glover",1000507746,Germany,Services
+V00065,Richard and Sons,1000859359,Singapore,Services
+V00066,"Barker, Jennings and Chen",1000233827,UK,Consulting
+V00067,Lang Inc,1000513160,UK,Consulting
+V00068,"Thompson, Long and Hall",1000188025,USA,IT
+V00069,Johnson Inc,1000584125,Singapore,Consulting
+V00070,Thompson and Sons,1000372793,USA,Industrial
+V00071,Brady-Rivas,1000321941,USA,Industrial
+V00072,"George, Cantrell and Sanders",1000453894,USA,Industrial
+V00073,Williams Ltd,1000888539,USA,Industrial
+V00074,Fisher-Washington,1000975467,India,Services
+V00075,"Spencer, Reynolds and Anderson",1000120324,UK,Consulting
+V00076,"Wolfe, Smith and Douglas",1000466960,Singapore,Consulting
+V00077,Santiago LLC,1000919182,India,Consulting
+V00078,Pena Ltd,1000359295,Singapore,Consulting
+V00079,"Luna, Craig and Mitchell",1000751517,Singapore,IT
+V00080,Richard-Gonzalez,1000232352,USA,Consulting
+V00081,"Hernandez, Alexander and Galvan",1000691364,Singapore,Services
+V00082,"West, Martinez and Nguyen",1000833442,Germany,Industrial
+V00083,Allen LLC,1000275939,UK,Consulting
+V00084,"Barton, Wilson and Robbins",1000915573,Singapore,Industrial
+V00085,Mcpherson-Reed,1000213349,UK,Consulting
+V00086,Hill LLC,1000427110,UK,Services
+V00087,Brown-Sanchez,1000515922,Singapore,Consulting
+V00088,Obrien Group,1000720859,Singapore,Consulting
+V00089,"Vang, Rodriguez and Burns",1000831059,Germany,Consulting
+V00090,Gonzalez PLC,1000934904,UK,Consulting
+V00091,Kaiser-Williams,1000464069,UK,Services
+V00092,Reynolds LLC,1000793655,Germany,Consulting
+V00093,"Perry, Ortiz and Parsons",1000630538,Germany,Consulting
+V00094,"Wright, Reed and Herrera",1000990844,USA,Services
+V00095,"Buck, Harris and Flores",1000210665,USA,Industrial
+V00096,Armstrong and Sons,1000766459,USA,IT
+V00097,Briggs-Michael,1000556641,Singapore,Industrial
+V00098,Mccarthy LLC,1000745830,UK,Services
+V00099,Lewis LLC,1000587455,USA,Industrial
+V00100,Peterson LLC,1000437960,Singapore,Consulting
+V00101,Pruitt-Weaver,1000392477,USA,IT
+V00102,Fry Ltd,1000886931,USA,Services
+V00103,"Ford, Arroyo and Moss",1000452737,India,Services
+V00104,Harris-Daniels,1000992288,Germany,IT
+V00105,Francis-Moreno,1000611233,Singapore,Industrial
+V00106,Wilson and Sons,1000936587,Germany,Industrial
+V00107,Weaver-Choi,1000393243,UK,Industrial
+V00108,"Joseph, Mckinney and Jordan",1000682789,India,IT
+V00109,Campbell-Moore,1000189771,Singapore,Services
+V00110,"Cochran, King and Torres",1000612311,UK,IT
+V00111,Stark Inc,1000824156,USA,Services
+V00112,Wallace Group,1000569945,India,Consulting
+V00113,"Martinez, Boyle and Hutchinson",1000408528,Singapore,Services
+V00114,"Lane, Giles and Montgomery",1000825391,Singapore,Industrial
+V00115,Tucker-Long,1000796212,UK,Industrial
+V00116,"Lee, Burns and Hess",1000596249,UK,Industrial
+V00117,Walter LLC,1000546173,UK,Industrial
+V00118,Davis-Mcfarland,1000468900,USA,Industrial
+V00119,Rodriguez-Baxter,1000421517,Germany,IT
+V00120,Dominguez-Montgomery,1000226516,Singapore,Industrial
+V00121,"Jones, Allen and Henson",1000225362,UK,IT
+V00122,Andrews and Sons,1000300845,Singapore,Services
+V00123,"Marshall, Bennett and Oconnell",1000389930,UK,Industrial
+V00124,Mendoza-Horne,1000205409,Singapore,Industrial
+V00125,Novak LLC,1000338533,Germany,IT
+V00126,"Hoover, Lopez and Jennings",1000416950,India,IT
+V00127,West and Sons,1000387636,India,Consulting
+V00128,Hunter and Sons,1000680238,Germany,IT
+V00129,Reed-Davis,1000768854,USA,Consulting
+V00130,Jones-Black,1000112861,UK,Industrial
+V00131,"Burns, Pierce and Wood",1000592198,USA,Services
+V00132,Huerta Group,1000457256,Singapore,Consulting
+V00133,"Harris, Smith and Blevins",1000364742,USA,Consulting
+V00134,Lamb Ltd,1000962050,India,Services
+V00135,Salinas LLC,1000615633,India,Consulting
+V00136,Bernard PLC,1000259097,Singapore,Industrial
+V00137,Howell-Dawson,1000189318,Singapore,Consulting
+V00138,Olson-Williams,1000685181,USA,IT
+V00139,"Davis, West and Gonzalez",1000913373,UK,Services
+V00140,"Thompson, Jones and Anderson",1000572398,USA,Industrial
+V00141,Bradley-Owens,1000717113,USA,Industrial
+V00142,Riley-Smith,1000696251,UK,Consulting
+V00143,Sullivan-Parker,1000739244,India,IT
+V00144,Ortega Ltd,1000755900,Singapore,Industrial
+V00145,"Berry, Foster and Webster",1000792509,India,IT
+V00146,Smith-Sanders,1000351516,Singapore,Consulting
+V00147,Young PLC,1000264136,India,Services
+V00148,"Mann, Crosby and Jordan",1000572387,UK,Services
+V00149,Watts-Chapman,1000405407,India,IT
+V00150,"Peterson, Bell and Jones",1000402099,Germany,Services
+V00151,"Watson, Bryant and Carter",1000174637,Singapore,Industrial
+V00152,Duke PLC,1000926097,UK,IT
+V00153,Knight-Johnson,1000545790,India,IT
+V00154,Davis-Mitchell,1000779094,Singapore,Industrial
+V00155,Miranda and Sons,1000966785,Singapore,Consulting
+V00156,Drake Group,1000162535,Singapore,Industrial
+V00157,Suarez Inc,1000723948,UK,Industrial
+V00158,Vaughn-Jackson,1000560485,India,Services
+V00159,"Hernandez, Branch and Brown",1000822131,Germany,Services
+V00160,Silva PLC,1000385470,UK,Services
+V00161,Hunter-Garcia,1000559023,India,Consulting
+V00162,"Foley, Campbell and Ray",1000553014,Germany,Industrial
+V00163,"Marsh, Jackson and Ortiz",1000127121,India,IT
+V00164,"Rush, Davila and Herrera",1000807053,UK,Consulting
+V00165,Haynes-Carter,1000901909,Germany,Consulting
+V00166,Harrison-Green,1000900177,Singapore,Services
+V00167,"Jones, Wilson and Christian",1000644173,USA,Industrial
+V00168,"Washington, Smith and Vaughn",1000290305,UK,Services
+V00169,"Schmitt, Holland and Orr",1000765620,USA,Consulting
+V00170,Jones-Parker,1000592841,Germany,Services
+V00171,Lewis LLC,1000449499,Germany,Consulting
+V00172,Chen Inc,1000999398,Singapore,Industrial
+V00173,"Miller, Le and Stanton",1000531641,USA,Industrial
+V00174,Ramirez LLC,1000794769,USA,Consulting
+V00175,Howell-Christian,1000576919,India,Industrial
+V00176,Woodward-Sullivan,1000364659,Germany,Consulting
+V00177,Bridges-Heath,1000910075,USA,Consulting
+V00178,Brady Ltd,1000789606,UK,Services
+V00179,"Rollins, Daniels and Love",1000533321,India,IT
+V00180,Munoz-Smith,1000643623,Germany,Services
+V00181,Miranda PLC,1000755788,USA,Consulting
+V00182,Roberts-Washington,1000313446,Germany,IT
+V00183,Miller-Floyd,1000402020,USA,Services
+V00184,Gomez-Compton,1000227324,India,IT
+V00185,"Perez, Velasquez and Bowers",1000844261,Singapore,Industrial
+V00186,Welch-Greene,1000677596,India,Services
+V00187,Rocha PLC,1000197736,Singapore,Consulting
+V00188,Reed-Vance,1000583863,India,IT
+V00189,Lopez Inc,1000622584,Germany,Industrial
+V00190,Delacruz-Schmidt,1000535673,USA,Services
+V00191,"Simmons, Rogers and Duran",1000355570,USA,IT
+V00192,"Anderson, Floyd and Ballard",1000502219,Singapore,IT
+V00193,Watson-Ochoa,1000173201,Germany,Services
+V00194,Clark Ltd,1000456385,UK,Industrial
+V00195,"Mitchell, Price and Delacruz",1000960408,India,Industrial
+V00196,"Russell, Roberts and Nguyen",1000861319,Germany,Services
+V00197,Baker Ltd,1000255813,USA,Services
+V00198,Jones Group,1000461888,Germany,Services
+V00199,Johnson LLC,1000577463,Germany,IT
+V00200,Tanner LLC,1000831380,Singapore,Services
+V00201,"Oliver, Krueger and Jimenez",1000344907,USA,Consulting
+V00202,Saunders Group,1000433632,USA,Services
+V00203,Thomas-Wilson,1000504832,Singapore,Services
+V00204,Phelps Ltd,1000138817,Singapore,Industrial
+V00205,"Holt, Collins and Hunt",1000205239,USA,Consulting
+V00206,Perez-Nicholson,1000651499,USA,Consulting
+V00207,Rogers-Martinez,1000857537,Singapore,Services
+V00208,Dudley-Shaw,1000786587,Singapore,Consulting
+V00209,Torres-Mann,1000592296,Germany,Industrial
+V00210,Goodwin-Yates,1000753534,USA,Consulting
+V00211,"Sharp, Smith and Brown",1000993140,Germany,Services
+V00212,"Hopkins, Harrison and Mack",1000432043,USA,Consulting
+V00213,Montgomery-Watson,1000747453,India,IT
+V00214,Clark and Sons,1000761820,Germany,IT
+V00215,"Russell, Costa and Bennett",1000883041,India,Services
+V00216,"Carter, Perry and Moore",1000203225,India,Services
+V00217,Mcbride-Wagner,1000274446,Germany,Consulting
+V00218,"Williams, Pruitt and Castillo",1000148225,Germany,Consulting
+V00219,Brown-Moody,1000407618,Germany,Industrial
+V00220,Hogan PLC,1000551607,Singapore,IT
+V00221,Harris-Moore,1000656968,USA,IT
+V00222,Mendoza-Green,1000278240,Singapore,Consulting
+V00223,"Newman, Evans and Powell",1000739098,USA,IT
+V00224,Simmons Group,1000621841,UK,IT
+V00225,Frank Ltd,1000343467,USA,Industrial
+V00226,Graham Inc,1000581894,Germany,Consulting
+V00227,Peterson-Williams,1000943718,USA,Industrial
+V00228,"Brown, Mason and Le",1000810526,UK,IT
+V00229,Cohen LLC,1000177449,USA,Industrial
+V00230,"King, Benton and Morse",1000716113,Germany,Services
+V00231,"Davis, Sherman and Benjamin",1000823846,Germany,Services
+V00232,"Myers, Rush and Norman",1000986365,Germany,IT
+V00233,Smith PLC,1000503380,USA,Consulting
+V00234,Lyons LLC,1000348728,USA,Industrial
+V00235,"Lee, Bullock and Davis",1000702733,Germany,Industrial
+V00236,"Burns, Kirk and Mueller",1000123005,USA,Industrial
+V00237,"Porter, Rodriguez and Burch",1000108491,UK,Consulting
+V00238,Vasquez PLC,1000735863,USA,Industrial
+V00239,Thomas-Wilson,1000913423,Singapore,Industrial
+V00240,"Wiley, Perez and Stanton",1000329642,Singapore,Industrial
+V00241,"Rodriguez, Franco and Larson",1000810687,Singapore,Consulting
+V00242,"Stout, Garcia and Jones",1000757937,India,Industrial
+V00243,Miller Group,1000926918,USA,Consulting
+V00244,Cooper Inc,1000707727,Germany,IT
+V00245,"Carrillo, Long and Garcia",1000194511,Germany,Industrial
+V00246,Miller PLC,1000883790,USA,IT
+V00247,Diaz PLC,1000310548,Singapore,Industrial
+V00248,Johnson-Lewis,1000656639,UK,Industrial
+V00249,Brown Group,1000970813,Singapore,Industrial
+V00250,Snyder PLC,1000964749,USA,Industrial
+V00251,Gonzales Group,1000882824,Germany,Consulting
+V00252,Walter PLC,1000591081,India,IT
+V00253,"Bryan, Hebert and Goodwin",1000890785,Singapore,Services
+V00254,Patterson and Sons,1000986827,UK,Industrial
+V00255,Smith-Arnold,1000194689,USA,Consulting
+V00256,Powell LLC,1000377304,UK,Consulting
+V00257,Hall Ltd,1000576877,Germany,Industrial
+V00258,Carter-Tucker,1000712955,USA,Industrial
+V00259,Carson-Watson,1000213609,Singapore,Services
+V00260,Molina and Sons,1000126240,UK,Industrial
+V00261,Harris LLC,1000739717,Singapore,Consulting
+V00262,Clarke and Sons,1000766269,USA,Industrial
+V00263,Harrison Group,1000780776,USA,Consulting
+V00264,"Burnett, Wilson and Carpenter",1000246566,India,Consulting
+V00265,"Watson, Barron and Underwood",1000419149,USA,Consulting
+V00266,Manning-Martin,1000201913,Singapore,IT
+V00267,Lane PLC,1000507524,USA,Industrial
+V00268,Nelson LLC,1000803055,UK,Services
+V00269,Armstrong Group,1000715870,Singapore,Services
+V00270,Ho-Davis,1000786735,India,Services
+V00271,Juarez LLC,1000745558,USA,Industrial
+V00272,Roy-Morales,1000134305,Germany,IT
+V00273,Ibarra Inc,1000564920,USA,IT
+V00274,Watson-Castillo,1000997004,Germany,Consulting
+V00275,"Jones, Ward and Allen",1000818987,Germany,Industrial
+V00276,Garrison PLC,1000163491,USA,Industrial
+V00277,"Butler, Ibarra and Boyd",1000299028,India,Services
+V00278,"West, Lee and Reilly",1000196126,Singapore,Consulting
+V00279,Key-Cooper,1000153035,Germany,IT
+V00280,Weaver-Garza,1000232040,UK,IT
+V00281,Johnson Inc,1000171942,UK,IT
+V00282,Gay-Russell,1000714867,Singapore,IT
+V00283,Mills-Santiago,1000444519,Singapore,Consulting
+V00284,"Ferguson, Howell and Castaneda",1000390743,Singapore,IT
+V00285,"Contreras, Hernandez and Stephens",1000666456,Germany,IT
+V00286,Patterson-Hess,1000215266,India,IT
+V00287,Smith LLC,1000115582,Germany,IT
+V00288,"Harrington, Walker and Brown",1000717457,Germany,Consulting
+V00289,Hill-Brown,1000282710,Germany,Consulting
+V00290,Harris PLC,1000232915,USA,Consulting
+V00291,Ruiz PLC,1000881886,India,Services
+V00292,"King, Brown and Pittman",1000570050,Germany,Consulting
+V00293,Kelly-Weber,1000573962,UK,IT
+V00294,Marsh Ltd,1000744986,India,Industrial
+V00295,Miller PLC,1000580292,India,Consulting
+V00296,Campbell-Ward,1000602248,USA,Services
+V00297,Whitney-Hamilton,1000819425,India,Services
+V00298,Johnson-Clarke,1000847006,USA,Consulting
+V00299,"Morales, Castro and Roberts",1000184714,Germany,IT
+V00300,Thompson-Hamilton,1000168872,Singapore,Industrial
+V00301,Townsend Inc,1000754644,UK,Industrial
+V00302,"Lyons, Dennis and Foley",1000499407,UK,Industrial
+V00303,"Prince, Lopez and Newton",1000575755,UK,Services
+V00304,Hines-Watson,1000203996,India,IT
+V00305,"Barrera, Logan and Owens",1000550961,USA,IT
+V00306,Pineda LLC,1000533914,Germany,Services
+V00307,Eaton Ltd,1000518098,USA,Consulting
+V00308,"Mcdaniel, Stein and Khan",1000427730,USA,Industrial
+V00309,Mcbride LLC,1000797416,Germany,Industrial
+V00310,Glenn-Winters,1000260053,USA,Consulting
+V00311,Walsh-Johnson,1000195656,India,Consulting
+V00312,"Guzman, Chandler and Perez",1000552855,India,Industrial
+V00313,Mays Group,1000951201,Singapore,Consulting
+V00314,Johnson-Keller,1000714953,UK,Industrial
+V00315,"Smith, Acosta and Allen",1000802559,India,Services
+V00316,Ferrell Inc,1000470774,USA,Consulting
+V00317,"Mathis, Thompson and Armstrong",1000401601,UK,Industrial
+V00318,Luna-Owens,1000468727,India,IT
+V00319,"Jordan, Murphy and Jackson",1000262246,USA,IT
+V00320,"Haley, Johns and Davis",1000988432,India,Industrial
+V00321,Webb PLC,1000986438,UK,Industrial
+V00322,Frazier LLC,1000220465,Germany,IT
+V00323,Graves-Weber,1000946432,USA,Consulting
+V00324,Garrison-Underwood,1000738577,Germany,Consulting
+V00325,Wilson-Harris,1000289179,Germany,Industrial
+V00326,"Mills, Myers and Burke",1000456331,Germany,Consulting
+V00327,"Parker, Dennis and Gonzalez",1000290217,Singapore,Services
+V00328,Lewis-Cox,1000172965,Singapore,Consulting
+V00329,"Zuniga, Adams and Quinn",1000196214,UK,IT
+V00330,"Rhodes, Robinson and Dean",1000494468,USA,Services
+V00331,Wang LLC,1000457455,Singapore,Industrial
+V00332,"Stewart, Cox and Jackson",1000426775,Germany,Consulting
+V00333,Fischer-Suarez,1000155164,Singapore,IT
+V00334,Pham-Davis,1000891083,UK,Consulting
+V00335,Hobbs Ltd,1000806707,India,Industrial
+V00336,Butler and Sons,1000564637,USA,Services
+V00337,"Gardner, Kaiser and Noble",1000736565,USA,Services
+V00338,"Hill, Stephens and Yu",1000386436,Singapore,Consulting
+V00339,Anderson LLC,1000461939,USA,Consulting
+V00340,Freeman Ltd,1000397005,UK,Services
+V00341,Flores and Sons,1000652530,Germany,Consulting
+V00342,"Church, Williams and Hoover",1000331230,USA,Consulting
+V00343,"Small, Chung and Vincent",1000108060,Singapore,Industrial
+V00344,"Santiago, Myers and Perez",1000321494,Singapore,Industrial
+V00345,"Reynolds, Stewart and Gonzales",1000403507,Germany,Consulting
+V00346,Lopez Group,1000108105,USA,Services
+V00347,"Carr, Brown and Smith",1000284229,Singapore,Services
+V00348,Yoder-Brown,1000658453,Singapore,Industrial
+V00349,Watts Group,1000175576,USA,Consulting
+V00350,Long PLC,1000557409,India,Services

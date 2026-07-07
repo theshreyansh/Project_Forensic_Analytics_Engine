@@ -1,0 +1,163 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 750px;
+                 background-color: #FFFFFF;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#FF9800", "font": {"color": "black"}, "id": "V00074", "label": "Fisher-Washington", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00054", "label": "Cabrera-James", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00064", "label": "Davis, Richardson and Glover", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00001", "label": "Greene-Garcia", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00034", "label": "Powell and Sons", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00020", "label": "Ellison, Schneider and Gomez", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00039", "label": "Mayer LLC", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00056", "label": "Stone Inc", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00013", "label": "Foster-Bell", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00019", "label": "Jefferson-Ford", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00041", "label": "Ramirez-Holt", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00050", "label": "Randall-Snyder", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00052", "label": "White-Schmidt", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00014", "label": "Pena, Lawson and Adams", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00068", "label": "Thompson, Long and Hall", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00017", "label": "Gardner-Lopez", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00053", "label": "Wood-Lee", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00029", "label": "Nguyen, Gray and Walsh", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00032", "label": "Rivera Inc", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00073", "label": "Williams Ltd", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00003", "label": "Cole-Johnson", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00022", "label": "Gibbs-Davis", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00070", "label": "Thompson and Sons", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00045", "label": "Gonzalez, Clarke and Kelley", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00007", "label": "Hicks, Sloan and Ramirez", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00033", "label": "Mendoza-Ellis", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00069", "label": "Johnson Inc", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00010", "label": "Kirby-Dillon", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00004", "label": "Davis and Sons", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00060", "label": "Estrada Ltd", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00072", "label": "George, Cantrell and Sanders", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00051", "label": "Griffin, Harris and Calderon", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00031", "label": "Ramos, Pham and Landry", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00055", "label": "Blackburn Inc", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00075", "label": "Spencer, Reynolds and Anderson", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00043", "label": "Thompson Inc", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00071", "label": "Brady-Rivas", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00021", "label": "Mann, Reed and Green", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00011", "label": "Morgan Inc", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00047", "label": "Martin-Ramos", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00042", "label": "Ingram LLC", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00012", "label": "Combs-Faulkner", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00025", "label": "Caldwell-Wu", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00028", "label": "Peters-Lutz", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00065", "label": "Richard and Sons", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00006", "label": "Silva PLC", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00030", "label": "Weaver and Sons", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00040", "label": "Clark Group", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00044", "label": "Mccann, Duarte and Jones", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00046", "label": "Nixon PLC", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00048", "label": "Bishop Group", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00057", "label": "Kidd, Burns and Bradley", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00035", "label": "Klein Ltd", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00061", "label": "Dunlap Group", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00002", "label": "Gonzalez-Mann", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00008", "label": "Parker, Burns and Higgins", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00023", "label": "Thompson PLC", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00005", "label": "Pope-Klein", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00036", "label": "Mcgrath-Wood", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00038", "label": "Campbell-Wolf", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00037", "label": "Watson, Kennedy and Richardson", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00066", "label": "Barker, Jennings and Chen", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00063", "label": "Fisher Group", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00009", "label": "Pearson-Smith", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00024", "label": "Cortez-Rogers", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00026", "label": "Orr, Phillips and Kim", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00027", "label": "Wells-Salazar", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00049", "label": "Moore, Johnston and Calderon", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00059", "label": "Pena, Ford and Mcdonald", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00067", "label": "Lang Inc", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00015", "label": "Clarke-Mcpherson", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00058", "label": "Mitchell Inc", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00062", "label": "Foster, Hall and Holt", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00018", "label": "Carrillo PLC", "shape": "dot", "size": 10, "title": "Vendor"}, {"color": "#FF9800", "font": {"color": "black"}, "id": "V00016", "label": "Gilmore-Johnson", "shape": "dot", "size": 10, "title": "Vendor"}]);
+                  edges = new vis.DataSet([]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "repulsion": {
+            "centralGravity": 0.2,
+            "damping": 0.09,
+            "nodeDistance": 200,
+            "springConstant": 0.05,
+            "springLength": 250
+        },
+        "solver": "repulsion",
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>
