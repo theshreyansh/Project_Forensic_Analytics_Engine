@@ -26,7 +26,18 @@ st.set_page_config(
     layout="wide"
 )
 
+from utils.app_style import render_page_shell
+
+render_page_shell()
+
+# Active tab highlight
+try:
+    st.query_params["tab"] = "Evidence Pack"
+except Exception:
+    pass
+
 st.title("📁 Evidence Pack Generator")
+
 
 CASE_FILE = OUTPUT_DIR / "case_queue.csv"
 
