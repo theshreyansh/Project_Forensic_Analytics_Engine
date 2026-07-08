@@ -1,5 +1,6 @@
 import streamlit as st
 from config import APP_NAME, APP_SUBTITLE, VERSION
+from utils.app_style import apply_global_style, render_top_tabs
 
 # -------------------------------------------------------
 # Page Configuration
@@ -11,6 +12,8 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded"
 )
+
+apply_global_style()
 
 # -------------------------------------------------------
 # Session State
@@ -101,41 +104,18 @@ if not st.session_state.logged_in:
     st.stop()
 
 # -------------------------------------------------------
-# Sidebar
-# -------------------------------------------------------
-
-with st.sidebar:
-
-    st.title("Navigation")
-
-    st.success(f"Logged in as")
-
-    st.info(st.session_state.user_role)
-
-    st.page_link("pages/01_Executive_Dashboard.py",label="Executive Dashboard")
-
-    st.page_link("pages/02_ERP_Analytics.py",label="ERP Analytics")
-
-    st.page_link("pages/03_Vendor_Intelligence.py",label="Vendor Intelligence")
-
-    st.page_link("pages/04_Network_Graph.py",label="Relationship Network")
-
-    st.page_link("pages/05_Communication_Review.py",label="Communication Review")
-
-    st.page_link("pages/06_Case_Queue.py",label="Case Queue")
-
-    st.page_link("pages/07_Evidence_Pack.py",label="Evidence Packs")
-
-    st.divider()
-
-    if st.button("Logout"):
-
-        st.session_state.logged_in=False
-        st.rerun()
-
-# -------------------------------------------------------
 # Home Screen
 # -------------------------------------------------------
+
+render_top_tabs()
+
+session_col, logout_col = st.columns([5, 1])
+with session_col:
+    st.caption(f"Logged in as {st.session_state.user_role}")
+with logout_col:
+    if st.button("Logout", use_container_width=True):
+        st.session_state.logged_in=False
+        st.rerun()
 
 st.markdown(f"# {APP_NAME}")
 
@@ -143,26 +123,36 @@ st.caption(APP_SUBTITLE)
 
 st.divider()
 
+nav_cols = st.columns(8)
+page_links = [
+    ("pages/01_Executive_Dashboard.py", "Executive Dashboard"),
+    ("pages/02_ERP_Analytics.py", "ERP Analytics"),
+    ("pages/03_Vendor_Intelligence.py", "Vendor Intelligence"),
+    ("pages/04_Network_Graph.py", "Network Graph"),
+    ("pages/05_Communication_Review.py", "Communication Review"),
+    ("pages/06_Case_Queue.py", "Case Queue"),
+    ("pages/07_Evidence_Pack.py", "Evidence Pack"),
+    ("pages/09_Din.py", "Din"),
+]
+for col, (page, label) in zip(nav_cols, page_links):
+    with col:
+        st.page_link(page, label=label)
+
+st.divider()
+
 st.success(
 """
 Welcome to the Deloitte Forensic Investigation Workbench.
 
-Use the navigation menu on the left to access:
+Use the tabs above to access:
 
 • Executive Dashboard
-
 • ERP Fraud Analytics
-
 • Vendor Intelligence
-
-• Relationship Network
-
+• Network Graph
 • Communication Review
-
-• Investigation Queue
-
-• Evidence Pack Generator
-
+• Case Queue
+• Evidence Pack
 """
 )
 
