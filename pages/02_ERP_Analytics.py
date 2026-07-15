@@ -1,7 +1,7 @@
 """
 =========================================================
 ERP Fraud Analytics
-Deloitte Forensic Investigation Workbench
+Master Forensic Investigation Workbench
 =========================================================
 """
 
