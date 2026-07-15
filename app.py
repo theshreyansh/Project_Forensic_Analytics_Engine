@@ -65,7 +65,7 @@ st.markdown("""
 
 if not st.session_state.logged_in:
 
-    st.markdown("<div class='main-title'>Deloitte Forensic Investigation Workbench</div>", unsafe_allow_html=True)
+    st.markdown("<div class='main-title'>Master Forensic Investigation Workbench</div>", unsafe_allow_html=True)
     st.markdown("<div class='subtitle'>Procurement Fraud Investigation Accelerator</div>", unsafe_allow_html=True)
 
     st.write("")
@@ -142,7 +142,7 @@ st.divider()
 
 st.success(
 """
-Welcome to the Deloitte Forensic Investigation Workbench.
+Welcome to the Master Forensic Investigation Workbench.
 
 Use the tabs above to access:
 
@@ -179,6 +179,6 @@ Interview Demo Flow
 st.divider()
 
 st.markdown(
-f"<div class='footer'>Version {VERSION} | Deloitte Forensic Technology Accelerator Demo</div>",
+f"<div class='footer'>Version {VERSION} | Master Forensic Technology Accelerator Demo</div>",
 unsafe_allow_html=True
 )
