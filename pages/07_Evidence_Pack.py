@@ -1,7 +1,7 @@
 """
 =========================================================
 Evidence Pack Generator
-Deloitte Forensic Investigation Workbench
+Master Forensic Investigation Workbench
 =========================================================
 """
 
@@ -81,7 +81,7 @@ def generate_pdf(selected_case):
     story = []
 
     story.append(Paragraph(
-        "<b>Deloitte Forensic Investigation Evidence Pack</b>",
+        "<b>Master Forensic Investigation Evidence Pack</b>",
         styles["Title"]
     ))
 
