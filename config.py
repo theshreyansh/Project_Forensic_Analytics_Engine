@@ -1,6 +1,6 @@
 """
 =========================================================
-Deloitte Forensic Investigation Workbench
+Master Forensic Investigation Workbench
 Configuration File
 =========================================================
 """
@@ -219,7 +219,7 @@ LLM_CONFIG = {
 
 PDF_CONFIG = {
 
-    "company": "Deloitte",
+    "company": "Master",
 
     "title": "Forensic Investigation Report"
 
@@ -229,7 +229,7 @@ PDF_CONFIG = {
 # Application Settings
 # -------------------------------------------------------
 
-APP_NAME = "Deloitte Forensic Investigation Workbench"
+APP_NAME = "Master Forensic Investigation Workbench"
 
 APP_SUBTITLE = "Procurement Fraud Investigation Accelerator"
 
