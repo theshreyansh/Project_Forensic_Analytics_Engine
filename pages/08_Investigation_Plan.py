@@ -1,7 +1,7 @@
 """
 =========================================================
 Investigation Plan
-Deloitte Forensic Investigation Workbench
+Master Forensic Investigation Workbench
 =========================================================
 """
 
