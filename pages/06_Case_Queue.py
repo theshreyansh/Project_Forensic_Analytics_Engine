@@ -1,7 +1,7 @@
 """
 =========================================================
 Case Queue
-Deloitte Forensic Investigation Workbench
+Master Forensic Investigation Workbench
 =========================================================
 """
 
@@ -101,7 +101,7 @@ with col2:
 
 st.divider()
 st.subheader("Workflow")
-owner = st.selectbox("Assign Investigator", ["Unassigned", "Alice", "Bob", "Charlie", "Deloitte Team"])
+owner = st.selectbox("Assign Investigator", ["Unassigned", "Alice", "Bob", "Charlie", "Master Team"])
 status = st.selectbox("Update Status", ["Open", "In Progress", "Pending Legal", "Closed"])
 notes = st.text_area("Investigator Notes")
 if st.button("Save Workflow (Demo)"):
